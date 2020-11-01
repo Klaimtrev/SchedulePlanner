@@ -1,0 +1,67 @@
+/* 
+This is the style sheet for the LOGIN PAGE ONLY.
+As it is now, it should change the layout according to the size of the user's screen.
+ */
+body {
+	background-color: rgba(255,0,0,0.65);
+}
+h2 {
+	color: white;
+	font-family: optima;
+	font-size: 300%;
+	font-weight: 500;
+	font-variant: small-caps;
+	line-height: 200px;
+	height: 200px;
+	z-index: 0;
+	margin-top: -50px;
+}
+h3 {
+	color: white;
+	font-family: optima;
+	font-size: 250%;
+	font-weight: 400;
+	font-variant: small-caps;
+	margin-top: -100px;
+}
+img {
+	opacity: 0.8;
+	display: block;
+	width:50%;
+	margin-left: auto;
+	margin-right: auto;
+	background-repeat: no-repeat;
+}
+div {
+	text-align: center;
+	padding: 0;
+}
+span {
+	display: block;
+	text-align: center;
+	padding-bottom: 10px;
+}
+input[type=text]:focus{
+	background-color: lightgrey;
+}
+input[type=text]{
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+input[type=password]{
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+input[type=password]:focus{
+	background-color: lightgrey;
+}
+input[type=checkbox]{
+	display: block;
+	margin: auto;
+}
+input[type=button]{
+	display: block;
+	margin: 0 auto;
+}
