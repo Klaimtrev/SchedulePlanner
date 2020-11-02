@@ -1,0 +1,125 @@
+/* 
+This is the style sheet for the Registration Page only
+ */
+body {
+	background-color: rgba(255,0,0,0.65);
+}
+
+h2 {
+	color: white;
+	font-family: optima;
+	font-size: 300%;
+	font-weight: 500;
+	font-variant: small-caps;
+	line-height: 200px;
+	height: 200px;
+	z-index: 0;
+	margin-top: -50px;
+}
+h3 {
+	color: white;
+	font-family: Helvetica;
+	font-size: 250%;
+	font-weight: 400;
+	font-variant: small-caps;
+	margin-top: 50px;
+}
+
+#rectangle{
+	top: 20px;
+	display: inline-block;
+    width:450px;
+    height:550px;
+    background:rgba(43, 43, 43, 1);
+    transform: translate(-50%,-50%);
+    border-radius: 15px;
+    position: absolute;
+    z-index:-5;
+   	top: 550px;
+}
+img {
+	opacity: 0.8;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	background-repeat: no-repeat;
+}
+div {
+	text-align: center;
+	padding: 0;
+}
+label{
+
+color:white;
+	font-family:Helvetica ;
+	display: block;
+	text-align: center;
+	padding-bottom: 10px;
+}
+select{
+	font-family:Helvetica ;
+	background-color: lightgrey;
+	text-align: center;
+	margin: 0 auto;
+	display: block;
+	padding: 50;
+
+
+
+}
+span {
+	color:white;
+	font-family:Helvetica ;
+	display: block;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 5px;
+}
+p {
+	font-size: 10px;
+	color:lightgrey;
+	font-family:Helvetica ;
+	display: block;
+	text-align: center;
+}
+
+input[type=text]:focus{
+	font-family:Helvetica ;
+	background-color: lightgrey;
+}
+
+input[type=text]{
+	font-family:Helvetica ;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+
+input[type=password]{
+	font-family:Helvetica ;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+input[type=password]:focus{
+	font-family:Helvetica ;
+	background-color: lightgrey;
+}
+input[type=Vpassword]{
+	font-family:Helvetica ;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+
+input[type=checkbox]{
+	display: block;
+	margin: auto;
+}
+input[type=button]{
+	font-family:Helvetica ;
+	display: block;
+	margin: 0 auto;
+	margin-top: 50px;
+
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<!-- Tab title for the window and importing stylesheet -->
+		<title>SEAS Course Planner</title>
+		<link rel="stylesheet" href="registrationstyle.css"/>
+	</head>
+<body>
+	<!-- WKU image file, specify width in center/top of page -->
+	<img src="output-onlinepngtools.png" width="200" height="100">
+	<div>
+
+		<!-- Headers for webpage and then login title -->
+
+		<h2>SEAS COURSE PLANNER</h2>
+		<h3>Create Account</h3>
+
+		<!-- Background Rectangle -->
+		<div id="rectangle"></div>
+
+	</div>		
+
+	<form>
+
+		<!-- Drop down menu to select what account type -->
+
+		<label for="usertype">Account Type:</label>
+
+		<select name="usertype" id="usertype">
+
+			<option value="Student">Student</option>
+
+			<option value="Admin">Admin</option>
+
+		</select>
+
+
+		<!-- textboxes for username password, and password verification -->
+
+		<div>
+
+			<span>Create a New User Name:</span>
+
+				<!-- Side note to enter in Student ID if Student-->
+
+				<p> <em>(If student, Use Student ID Number)</em> </p>
+
+		</div>
+
+		<input type="text" id="username" name="username" placeholder="New Username"><br>
+
+
+		<span>Create a Password:</span>
+
+
+			<input type="password" id="myInput" name="password" placeholder="New Password"><br>
+
+			<input type="password" id="myInput2" name="Verify Password" placeholder="Verify Password"><br>
+
+		<!-- checkbox for user to check if they would like to see their password in the textbox -->
+
+		<span>Show Passwords:</span>
+
+		<label for="showpassword" style="word-wrap:break-word">	
+
+			<input id="showpassword" type="checkbox" onclick="showPassword();showVPassword()"
+
+		</label>
+
+
+
+		<!-- two buttons (not yet connected to corresponding webpages) for login and create account -->
+		<input type="button" value="Create Account"><br>
+
+	</form>
+
+	<!-- javascript to hide password AND verification password unless checkbox is checked -->
+	<script>
+		function showPassword() {
+			var x = document.getElementById("myInput");
+			if (x.type === "password") {
+				x.type = "text";
+			} else {
+				x.type = "password";
+			}
+		}
+		function showVPassword() {
+			var x = document.getElementById("myInput2");
+			if (x.type === "password") {
+				x.type = "text";
+			} else {
+				x.type = "password";
+			}
+		}
+	</script>
+	</script>
+</body>
+</html>
