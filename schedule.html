@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Schedule Planner</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
+    <style>
+        * {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #003366;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: rgb(233, 227, 227);
+  color: black;
+}
+
+/* Style the content */
+.content {
+  background-color: #ddd;
+  padding: 10px;
+  height: 100px; /* Should be removed. Only for demonstration */
+}
+
+/* Style the footer */
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+svg {
+  font: 20px sans-serif;
+  background: white;
+  display:block;
+   margin:0 auto;
+}
+button {
+  clear:right;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 4px 2px;
+  display:block;
+  }
+.chart rect {
+  stroke: rgb(255, 255, 255);
+  }
+rect.section {
+  cursor: ns-resize;
+}
+.line {
+  fill:none;
+  stroke:rgb(3, 3, 3);
+  stroke-width:1.5px;
+}
+.axis path, .axis line {
+  fill:none;
+  stroke:silver;
+  shape-rendering: crispEdges;
+}
+.axis path {
+  display: none;
+}
+.grid {
+  fill:none;
+  stroke-width:0.5px;
+  stroke:rgb(7, 7, 7);
+  opacity:0.2;
+  }
+.ratio {
+  fill:#f2c180;
+  color:#f2c180;
+}
+.fsratio {
+  fill:#f3a53d;
+  color:#f3a53d;
+}
+  .students {
+  fill:#5cadf0;
+  color:#5cadf0;
+  }
+.faculty {
+  fill:steelblue;
+  color:steelblue;
+}
+#wrap {
+  width:910px;
+  margin:0 auto;
+    }
+    </style>
+</head>
+<body><div class="topnav">
+    <a href="#">SEAS Course Planner</a>
+    <a href="#">Current Pathway</a>
+    <a href="#">New Pathway</a>
+    <button class="button">Logout</button>
+  </div>
+  
+  <div class="content">
+    <h2>Weekly Schedule</h2>
+    <p>Please arrange your schedule and then press "Save" to save it or "Delete" to delete it</p>
+    <script src="schedule.js"></script>
+  </div>
+  
+  <div class="footer">
+    <button class="button">Save</button>
+    <button class="button">Cancel</button>
+  </div>
+</body>
+</html>
